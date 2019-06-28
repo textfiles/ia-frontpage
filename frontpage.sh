@@ -40,6 +40,13 @@ if [ ! "$VERSION" ]
    exit 1
 fi
 
+# Special Use Case: You can feed this script a pile of arguments and it's like running it
+# over and over. It'll give you a LOT of output (for now, unless we do major surgery)
+# but it will do the right thing. Otherwise, use as the docs say.
+
+for ARGUMENT in $@
+    do
+
 # Now, about that argument.
 # Is it a filename or a collection, and finally.. an item?
 
@@ -172,3 +179,5 @@ echo "Total items updated: $COUNT out of `echo $LISTING | wc -w`"
 
 cd ..
 rm -rf "FRONTPAGE.$REPOSITORY"
+
+done
