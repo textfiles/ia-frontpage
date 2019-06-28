@@ -44,14 +44,11 @@ fi
 # over and over. It'll give you a LOT of output (for now, unless we do major surgery)
 # but it will do the right thing. Otherwise, use as the docs say.
 
-for ARGUMENT in $@
+for BOOKYWOOK in $@
     do
 
 # Now, about that argument.
 # Is it a filename or a collection, and finally.. an item?
-
-BOOKYWOOK=$1
-
 if [ -f "$BOOKYWOOK" ]
    then
    echo "Working with a file: $BOOKYWOOK"
