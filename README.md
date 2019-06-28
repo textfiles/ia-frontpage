@@ -21,6 +21,6 @@ To invoke the script, use:
 
 [items] can be a single identifier on the Internet Archive (including a URL), or a collection name, or a local file with a list of identifiers.
 
-The script will do its best with what you give it.
+The script will do its best with what you give it. Bear in mind that post-modification, it may take a few minutes before the cover switch is reflected in the archive's pages when you view them - pressing SHIFT and reloading your browser may help as well.
 
 Created by Jason Scott, Free-Range Archivist at the Internet Archive.
